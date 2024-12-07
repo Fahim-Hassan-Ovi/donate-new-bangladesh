@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Donation BD</title>
     <!-- favicon -->
-    <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon">
+    <link rel="shortcut icon" href="./assets/donationLogo2.png" type="image/x-icon">
     <!-- google font: lexend -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -53,16 +53,16 @@
             </div>
         </nav>
         <section class="flex justify-center items-center gap-2 lg:py-6 mt-5 lg:mt-9">
-            <div><button
+            <div><button id="donation-section-btn"
                     class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg bg-white border-gray-400 border-2">Donation</button>
             </div>
-            <div><button
+            <div><button id="history-section-btn"
                     class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg bg-white border-gray-400 border-2">History</button>
             </div>
         </section>
     </header>
-    <main>
-        <div class="border border-[#1111111a] lg:mx-36 p-4 lg:p-8 lg:gap-8 flex flex-col lg:flex-row justify-center items-center rounded-2xl lg:h-[450px] lg:mt-6 mt-5 gap-5
+    <main id="main">
+        <div id="div-1" class="border border-[#1111111a] lg:mx-36 p-4 lg:p-8 lg:gap-8 flex flex-col lg:flex-row justify-center items-center rounded-2xl lg:h-[450px] lg:mt-6 mt-5 gap-5
             ">
             <div class="lg:w-1/2 h-full">
                 <img class="w-full h-full rounded-s-xl" src="./assets/noakhali.png" alt="">
@@ -82,21 +82,24 @@
                     and making a positive impact on the lives of those in need.</p>
                 <input id="donate-amount-1" type="text" placeholder="Write Donation Amount"
                     class="input input-bordered input-info w-full border-gray-500" />
-                <button id="btn-donate-1" onclick="handleDonate()" class="btn bg-primary w-full text-xl font-bold">Donate Now</button>
+                <button id="btn-donate-1" onclick="handleDonate()"
+                    class="btn bg-primary w-full text-xl font-bold">Donate Now</button>
                 <dialog id="my_modal_1" class="modal">
                     <form method="dialog" class="modal-box px-5 py-10 flex flex-col justify-center items-center">
-                      <h3 class="font-bold text-2xl my-5">Congrates!</h3>
-                      <img class="text-6xl" src="./assets/coin.png" alt="">
-                      <div class="text-center">
-                        <p class="text-gray-400">You have Donated for Humankind.</p>
-                      </div>
-                      <p class="my-2 text-xl font-bold">Successfully</p>
-                      <button id="btn-continue" class="btn bg-secondary px-16 btn-md hover:bg-primary transition-colors ease-in duration-300 text-gray-400">Close confirmation</button>
+                        <h3 class="font-bold text-2xl my-5">Congrates!</h3>
+                        <img class="text-6xl" src="./assets/coin.png" alt="">
+                        <div class="text-center">
+                            <p class="text-gray-400">You have Donated for Humankind.</p>
+                        </div>
+                        <p class="my-2 text-xl font-bold">Successfully</p>
+                        <button id="btn-continue"
+                            class="btn bg-secondary px-16 btn-md hover:bg-primary transition-colors ease-in duration-300 text-gray-400">Close
+                            confirmation</button>
                     </form>
-              </dialog>
+                </dialog>
             </div>
         </div>
-        <div
+        <div id="div-2"
             class="border border-[#1111111a] lg:mx-36 p-4 lg:p-8 lg:gap-8 flex flex-col lg:flex-row justify-center items-center rounded-2xl lg:h-[450px] lg:mt-6 mt-5 gap-5">
             <div class="lg:w-1/2 h-full">
                 <img class="w-full h-full rounded-s-xl" src="./assets/feni.png" alt="">
@@ -117,21 +120,24 @@
                     those in urgent need.</p>
                 <input id="donate-amount-2" type="text" placeholder="Write Donation Amount"
                     class="input input-bordered input-info w-full border-gray-500" />
-                <button onclick="my_modal_2.showModal()" class="btn bg-primary w-full text-xl font-bold">Donate Now</button>
+                <button onclick="my_modal_2.showModal()" class="btn bg-primary w-full text-xl font-bold">Donate
+                    Now</button>
                 <dialog id="my_modal_2" class="modal">
                     <form method="dialog" class="modal-box px-5 py-10 flex flex-col justify-center items-center">
-                      <h3 class="font-bold text-2xl my-5">Congrates!</h3>
-                      <img class="text-6xl" src="./assets/coin.png" alt="">
-                      <div class="text-center">
-                        <p class="text-gray-400">You have Donated for Humankind.</p>
-                      </div>
-                      <p class="my-2 text-xl font-bold">Successfully</p>
-                      <button id="btn-continue" class="btn bg-secondary px-16 btn-md hover:bg-primary transition-colors ease-in duration-300 text-gray-400">Close confirmation</button>
+                        <h3 class="font-bold text-2xl my-5">Congrates!</h3>
+                        <img class="text-6xl" src="./assets/coin.png" alt="">
+                        <div class="text-center">
+                            <p class="text-gray-400">You have Donated for Humankind.</p>
+                        </div>
+                        <p class="my-2 text-xl font-bold">Successfully</p>
+                        <button id="btn-continue"
+                            class="btn bg-secondary px-16 btn-md hover:bg-primary transition-colors ease-in duration-300 text-gray-400">Close
+                            confirmation</button>
                     </form>
-              </dialog>
+                </dialog>
             </div>
         </div>
-        <div
+        <div id="div-3"
             class="border border-[#1111111a] lg:mx-36 p-4 lg:p-8 lg:gap-8 flex flex-col lg:flex-row justify-center items-center rounded-2xl lg:h-[450px] lg:mt-6 mt-5 gap-5">
             <div class="lg:w-1/2 h-full">
                 <img class="w-full h-full rounded-s-xl" src="./assets/quota-protest.png" alt="">
@@ -153,24 +159,35 @@
                     need.</p>
                 <input id="donate-amount-3" type="text" placeholder="Write Donation Amount"
                     class="input input-bordered input-info w-full border-gray-500" />
-                <button onclick="my_modal_3.showModal()" class="btn bg-primary w-full text-xl font-bold">Donate Now</button>
+                <button onclick="my_modal_3.showModal()" class="btn bg-primary w-full text-xl font-bold">Donate
+                    Now</button>
                 <dialog id="my_modal_3" class="modal">
                     <form method="dialog" class="modal-box px-5 py-10 flex flex-col justify-center items-center">
-                      <h3 class="font-bold text-2xl my-5">Congrates!</h3>
-                      <img class="text-6xl" src="./assets/coin.png" alt="">
-                      <div class="text-center">
-                        <p class="text-gray-400">You have Donated for Humankind.</p>
-                      </div>
-                      <p class="my-2 text-xl font-bold">Successfully</p>
-                      <button id="btn-continue" class="btn bg-secondary px-16 btn-md hover:bg-primary transition-colors ease-in duration-300 text-gray-400">Close confirmation</button>
+                        <h3 class="font-bold text-2xl my-5">Congrates!</h3>
+                        <img class="text-6xl" src="./assets/coin.png" alt="">
+                        <div class="text-center">
+                            <p class="text-gray-400">You have Donated for Humankind.</p>
+                        </div>
+                        <p class="my-2 text-xl font-bold">Successfully</p>
+                        <button id="btn-continue"
+                            class="btn bg-secondary px-16 btn-md hover:bg-primary transition-colors ease-in duration-300 text-gray-400">Close
+                            confirmation</button>
                     </form>
-              </dialog>
+                </dialog>
             </div>
         </div>
-    </main>
-    <footer class="bg-[#F9F7F3] h-[70px] mt-4 lg:mt-8 lg:h-[110px] ">
+        <section id="blank-section" class="bg-[#F9F7F3] h-[70px] mt-4 lg:mt-8 lg:h-[110px] ">
 
+        </section>
+    </main>
+    <!-- history section start -->
+    <footer id="history-section" class="lg:mx-36 p-4 lg:p-8 lg:gap-8  border-gray-400 border-2 h-36 hidden">
+        <div class="history-container">
+            
+        </div>
     </footer>
+    <!-- history section end -->
+    <script src="js/features.js"></script>
     <script src="js/utilities.js"></script>
     <script src="js/donateMoney.js"></script>
 </body>
