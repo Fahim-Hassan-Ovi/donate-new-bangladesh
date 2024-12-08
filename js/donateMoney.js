@@ -10,14 +10,25 @@ document.getElementById('btn-donate-1').addEventListener('click', function (even
 
     document.getElementById('initial-amount-1').innerText = increaseMoney;
     document.getElementById('initial-total-amount').innerText = remainingAmount;
-    // add to history section
-    // const time = date(); <p>Date: ${time}</p>
-    // const div = document.createElement('div');
-    // div.innerHTML = `<p class="text-black"> ${donateMoney} is donated for Donate for Flood at Noakhli, bangladesh.</p>
-    //         `
-    // document.getElementById('history-container').appendChild(div);
 
-    document.getElementById('history-container').innerHTML = `<p class="text-black"> ${donateMoney} is donated for Donate for Flood at Noakhli, bangladesh.</p> `;
+    // add to history section
+
+
+    // <p>Date: ${time}</p> <p> ${new Date().toLocalDateString()} </p>
+    const div = document.createElement('div');
+    const time = new Date(); 
+    div.classList.add('border-2');
+    div.classList.add('border-gray-400');
+    div.classList.add('mb-4');
+    div.innerHTML = `<p class="text-black font-bold"> ${donateMoney} is donated for Donate for Flood at Noakhli, bangladesh.</p> <p class="border border-gray-300 p-2">Date: ${time}</p> `
+    console.log(div);
+    document.getElementById('history-container').appendChild(div);
+
+
+    // document.getElementById('date').innerHTML = `<p> ${new Date().toLocalString()} </p>`;
+    // document.getElementById('history-container').appendChild(div);
+    
+    // document.getElementById('history-container').innerHTML = `<p class="text-black"> ${donateMoney} is donated for Donate for Flood at Noakhli, bangladesh.</p> `;
 
 })
 
