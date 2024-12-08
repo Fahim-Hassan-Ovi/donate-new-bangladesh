@@ -82,7 +82,7 @@
                     and making a positive impact on the lives of those in need.</p>
                 <input id="donate-amount-1" type="text" placeholder="Write Donation Amount"
                     class="input input-bordered input-info w-full border-gray-500" />
-                <button id="btn-donate-1" onclick="handleDonate()"
+                <button id="btn-donate-1" onclick="handleDonate1()"
                     class="btn bg-primary w-full text-xl font-bold">Donate Now</button>
                 <dialog id="my_modal_1" class="modal">
                     <form method="dialog" class="modal-box px-5 py-10 flex flex-col justify-center items-center">
@@ -108,7 +108,7 @@
                 <div
                     class="bg-secondary w-28 h-11 flex justify-center items-center gap-2 text-[#111111b3] text-base rounded-lg">
                     <span><img src="./assets/coin.png" alt=""></span>
-                    <span>600</span>
+                    <span id="initial-amount-2">600</span>
                     <span>BDT</span>
                 </div>
                 <h1 class="text-xl font-bold">Donate for Flood Relief in Feni,Bangladesh</h1>
@@ -120,7 +120,7 @@
                     those in urgent need.</p>
                 <input id="donate-amount-2" type="text" placeholder="Write Donation Amount"
                     class="input input-bordered input-info w-full border-gray-500" />
-                <button onclick="my_modal_2.showModal()" class="btn bg-primary w-full text-xl font-bold">Donate
+                <button id="btn-donate-2" onclick="handleDonate2()" class="btn bg-primary w-full text-xl font-bold">Donate
                     Now</button>
                 <dialog id="my_modal_2" class="modal">
                     <form method="dialog" class="modal-box px-5 py-10 flex flex-col justify-center items-center">
@@ -146,7 +146,7 @@
                 <div
                     class="bg-secondary w-28 h-11 flex justify-center items-center gap-2 text-[#111111b3] text-base rounded-lg">
                     <span><img src="./assets/coin.png" alt=""></span>
-                    <span>0</span>
+                    <span id="initial-amount-3">0</span>
                     <span>BDT</span>
                 </div>
                 <h1 class="text-xl font-bold">Aid for Injured in the Quota Movement</h1>
@@ -159,7 +159,7 @@
                     need.</p>
                 <input id="donate-amount-3" type="text" placeholder="Write Donation Amount"
                     class="input input-bordered input-info w-full border-gray-500" />
-                <button onclick="my_modal_3.showModal()" class="btn bg-primary w-full text-xl font-bold">Donate
+                <button id="btn-donate-3" onclick="handleDonate3()" class="btn bg-primary w-full text-xl font-bold">Donate
                     Now</button>
                 <dialog id="my_modal_3" class="modal">
                     <form method="dialog" class="modal-box px-5 py-10 flex flex-col justify-center items-center">
@@ -188,7 +188,9 @@
     <!-- history section end -->
     <script src="js/features.js"></script>
     <script src="js/utilities.js"></script>
-    <script src="js/donateMoney.js"></script>
+    <script src="js/donateMoney1.js"></script>
+    <script src="js/donateMoney2.js"></script>
+    <script src="js/donateMoney3.js"></script>
 </body>
 
 </html>
